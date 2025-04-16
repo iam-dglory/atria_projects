@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atria Institute of Technology - Project Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/atria-logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <img src="images/atria-logo.png" alt="Atria Logo" class="logo">
+    <h1>Atria Institute of Technology</h1>
+    <p class="slogan">Where Engineering Meets Innovation</p>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="projects" class="project-section">
+      <h2>Electronics & Communication Projects</h2>
+      <div class="filters">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('iot')">IoT</button>
+        <button onclick="filterProjects('ml')">Machine Learning</button>
+        <button onclick="filterProjects('vlsi')">VLSI</button>
+        <button onclick="filterProjects('embedded')">Embedded Systems</button>
+      </div>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card vlsi">
+          <img src="images/fpga-cipher.jpg" alt="FPGA Implementation of Present Cipher">
+          <h3>Hardware Implementation of Present Cipher in FPGA</h3>
+          <p>Secure lightweight cipher implementation for constrained environments using FPGA technology...</p>
+          <button class="btn" onclick="openModal('modal1')">Read More</button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card ml">
+          <img src="images/animal-repellent.jpg" alt="Acoustic Animal Repellent System">
+          <h3>ML-based Acoustic Repellent System for Crop Protection</h3>
+          <p>CNN-based animal detection with targeted ultrasonic frequencies to protect crops without harm...</p>
+          <button class="btn" onclick="openModal('modal2')">Read More</button>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card embedded">
+          <img src="images/communication-system.jpg" alt="Communication System for Disabilities">
+          <h3>Innovative Communication System for Deaf, Dumb, and Blind</h3>
+          <p>Raspberry Pi-based system integrating object recognition, text-to-speech, and speech-to-text...</p>
+          <button class="btn" onclick="openModal('modal3')">Read More</button>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card iot">
+          <img src="images/3d-printer.jpg" alt="3D Printer Project">
+          <h3>Digital Light Processing and Fused Deposition Modeling 3D Printer</h3>
+          <p>Comparative study and implementation of DLP and FDM 3D printing technologies...</p>
+          <button class="btn" onclick="openModal('modal4')">Read More</button>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card iot">
+          <img src="images/3d-printer-2.jpg" alt="3D Printer Project Alternative">
+          <h3>Advanced 3D Printing Technologies Comparison</h3>
+          <p>Detailed analysis of DLP vs FDM printing methods with prototype implementation...</p>
+          <button class="btn" onclick="openModal('modal5')">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Structures -->
+    <div id="modal1" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h3>Hardware Implementation of Present Cipher in FPGA</h3>
+        <img src="images/fpga-cipher.jpg" alt="FPGA Implementation">
+        <div class="modal-details">
+          <div class="team-info">
+            <h4>Team Members</h4>
+            <p>Mr. Akshay Omanakuttan (1AT19EC003)</p>
+            <p>Mr. Arman Ali (1AT19EC010)</p>
+            <p>Mr. Asutosh Jujare (1AT19EC034)</p>
+            <p>Miss. Jyoti Kumari (1AT19EC075)</p>
+          </div>
+          <div class="project-info">
+            <h4>Project Abstract</h4>
+            <p>Our project implements the PRESENT lightweight cipher in FPGA for security applications. We reviewed existing implementations and developed two novel designs that set new records in implementation size and energy consumption. The system is particularly suited for IoT devices in constrained environments.</p>
+            <h4>Key Features</h4>
+            <ul>
+              <li>Lightweight cipher implementation</li>
+              <li>Optimized for 7nm FinFET technology</li>
+              <li>Energy-efficient architecture</li>
+              <li>High throughput-per-slice</li>
+            </ul>
+          </div>
+        </div>
+        <a href="pdfs/fpga-cipher.pdf" class="modal-download" download>
+          <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Download Full Report
+        </a>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h3>ML-based Acoustic Repellent System for Crop Protection</h3>
+        <img src="images/animal-repellent.jpg" alt="Animal Repellent System">
+        <div class="modal-details">
+          <div class="team-info">
+            <h4>Team Members</h4>
+            <p>Misba Tabassum (1AT19EC098)</p>
+            <p>Mohammed Awaiz (1AT19EC100)</p>
+            <p>Manasa G (1AT19EC094)</p>
+            <p>Mohammed Irfan G (1AT19EC101)</p>
+          </div>
+          <div class="project-info">
+            <h4>Project Abstract</h4>
+            <p>This system protects crops from wild animals using machine learning and targeted acoustic frequencies. A CNN model identifies approaching animals through infrared cameras, then emits specific ultrasonic frequencies to repel them without causing physical harm.</p>
+            <h4>Key Features</h4>
+            <ul>
+              <li>CNN-based animal detection</li>
+              <li>Species-specific frequency generation</li>
+              <li>Infrared night vision capability</li>
+              <li>Raspberry Pi coordination</li>
+            </ul>
+          </div>
+        </div>
+        <a href="pdfs/animal-repellent.pdf" class="modal-download" download>
+          <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Download Full Report
+        </a>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h3>Communication System for Deaf, Dumb, and Blind</h3>
+        <img src="images/communication-system.jpg" alt="Communication System">
+        <div class="modal-details">
+          <div class="team-info">
+            <h4>Team Members</h4>
+            <p>Mr. K Rakesh (1AT19EC076)</p>
+            <p>Mohamed Azeez Afsar (1AT19EC099)</p>
+            <p>Mohmmed Talib Khasim (1AT19EC102)</p>
+            <p>Mr. Syed Bilal Ryan (1AT19EC172)</p>
+          </div>
+          <div class="project-info">
+            <h4>Project Abstract</h4>
+            <p>This innovative system assists individuals with visual, hearing, or vocal impairments through integrated technologies. It combines object recognition, text-to-speech, and speech-to-text conversion in a Raspberry Pi platform to facilitate communication.</p>
+            <h4>Key Features</h4>
+            <ul>
+              <li>Object recognition for the blind</li>
+              <li>Speech-to-text for the deaf</li>
+              <li>Text-to-speech for the mute</li>
+              <li>Unified Raspberry Pi interface</li>
+            </ul>
+          </div>
+        </div>
+        <a href="pdfs/communication-system.pdf" class="modal-download" download>
+          <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Download Full Report
+        </a>
+      </div>
+    </div>
+
+    <!-- Modal 4 and 5 would follow similar structure -->
+    
+    <section id="about">
+      <h2>About</h2>
+      <p>This website showcases the groundbreaking final-year projects developed by students of the Electronics and Communication Department at Atria Institute of Technology. These innovative works span across cutting-edge domains such as IoT, Machine Learning, FPGA, Digital Systems, and Renewable Energy, highlighting the remarkable engineering talent and creativity of our students.
+        Each project is a reflection of not just technical knowledge, but also a deep commitment to solving real-world problems and contributing to societal development. With a strong focus on innovation, functionality, and future scalability, these student-driven initiatives have the potential to shape industries and communities.
+        The students of Atria are not just engineers in the making — they are change-makers and visionaries, pushing boundaries and redefining what’s possible. This platform is a tribute to their dedication, passion, and the exciting future they are building, one project at a time.
+        .</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out to us for collaborations, feedback, or queries at Atria Institute of Technology,
+
+        Adjacent Bangalore Baptist Hospital,
+        Hebbal, Bengaluru - 560 024
+        <a href="mailto:projects@atria.edu">projects@atria.edu</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Atria Institute of Technology. All rights reserved.</p>
+  </footer>
+  <script>
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.querySelectorAll('.modal-overlay').forEach(modal => {
+        modal.style.display = 'none';
+      });
+      document.body.style.overflow = 'auto';
+    }
+
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal-overlay')) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>
